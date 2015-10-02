@@ -1,3 +1,31 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 5. User administration:
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+(*) Read about LDAP authentication process.
+
+1. It has features like login on jenkins. Adding extra users in jenkins.
+2. Go to Manage Jenkins and then choose Configure global security.
+3. Check Enable Security.
+4. Users
+
+* Root user:
+Ashu
+Ashu@123
+adoreashish@gmail.com
+Ashish Gupta
+
+* Additional User:
+Ashish
+Ashish@123
+ashishkumar.gupta@wipro.com
+Ashishkumar Gupta
+
+5.I have given the user Ashish 'Overall:Read' and 'Job:Read permission' so the user Ashish
+  can only view the builds and all the read releated operations.
+6. To give this user Build option sheck 'Job:Build' option. Now this user can build the jobs.
+7. All this permission is given by the user Ashu.
+8. To revoke the permission just uncheck the options or check some other options to give the
+user extra privleges.
+
+###############################################################################################
