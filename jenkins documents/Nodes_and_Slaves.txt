@@ -1,0 +1,39 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4. Creating and confuring Nodes and Slaves
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Asked Rakesh about this since he can explain much better.
+
+Also in the video it is mentioned that master-slave is used for C++ and similar application 
+where application needs to be compiled for different OS.
+For a java application there is no need for master-slave configuration.
+
+Clear the above two points.
+
+Definition:
+Jenkins supports the "master/slave" mode, where the workload of building projects are delegated to 
+multiple "slave" nodes, allowing a single Jenkins installation to host a large number of projects,
+or to provide different environments needed for builds/tests
+
+Link: 
+https://wiki.jenkins-ci.org/display/JENKINS/Distributed+builds
+https://wiki.jenkins-ci.org/display/JENKINS/
+Step+by+step+guide+to+set+up+master+and+slave+machines
+
+1. After following the link2 I created a master-slave configuration. Jenkins slave was connected
+to master by using JNLP agent. 
+2. The slave was created on the same machine as master by me.
+loc: C:\Users\Ashishkumar\jenkins slave
+3. The jar to connect slave to the master located 
+@ D:\ashish\Users\Tutorials\Jenkins\slave-agent.jnpl
+
+# Configuring jobs in slave:
+1. Go to jenkins and the new item.
+2. Select the checkbox which says 'restrict where this project can be run' and give the label 
+as the label of the slave machine.
+3. I copied one existing ResourceLocator job and modified the above settings only.
+4. Simply run the job. It will run on the slave machine.
+5. Rest is same as in case of normal jenkins build. It will create a workspace in the slave
+directory and do the build and deployment part as schedule in the job.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

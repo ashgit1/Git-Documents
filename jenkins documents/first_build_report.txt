@@ -1,0 +1,40 @@
+Started by user anonymous
+Building in workspace C:\Users\Ashishkumar\.jenkins\jobs\maven_project\workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/ashgit1/MavenProject.git
+ > git.exe init C:\Users\Ashishkumar\.jenkins\jobs\maven_project\workspace # timeout=10
+Fetching upstream changes from https://github.com/ashgit1/MavenProject.git
+ > git.exe --version # timeout=10
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/ashgit1/MavenProject.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/ashgit1/MavenProject.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/ashgit1/MavenProject.git # timeout=10
+Fetching upstream changes from https://github.com/ashgit1/MavenProject.git
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/ashgit1/MavenProject.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision c058b00781e334c47e1b4a7ab1e0f61c6608651a (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f c058b00781e334c47e1b4a7ab1e0f61c6608651a
+First time build. Skipping changelog.
+[workspace] $ cmd.exe /C '"mvn.bat -f pom.xml compile && exit %%ERRORLEVEL%%"'
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MavenProject Maven Webapp 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MavenProject ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\Ashishkumar\.jenkins\jobs\maven_project\workspace\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ MavenProject ---
+[INFO] No sources to compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.743 s
+[INFO] Finished at: 2015-04-12T16:15:18+01:00
+[INFO] Final Memory: 5M/247M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

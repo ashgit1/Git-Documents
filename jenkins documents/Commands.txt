@@ -1,0 +1,13 @@
+1. Which port is used by a service ?
+The command is netstat.
+ex: 
+To check whether tomcat is running we fire : 
+$ ps -ef | grep java
+Now to check which port is used by tomcat server:
+$ netstat -anp | grep java 
+
+2. Tar a file in Linux
+$ tar -cvf file.tar filename
+
+3. Untar a file
+$ tar -xvf filename.tar

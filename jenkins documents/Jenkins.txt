@@ -1,0 +1,18 @@
+Steps:
+
+1. Download the war file of the jenkins and run on the local tomcat container.
+2. Then we need to install the required pugin for our project. In my case github, maven and ant.
+3. Go to Manages plugins and install the git plugin. Wait for all the activities to get yellow.
+4. Once the git plugins are installed restart the server. [Tomcat]
+
+
+http://www.jdev.it/deploying-your-war-file-from-jenkins-to-tomcat/
+
+http://paxcel.net/blog/automation-of-warear-deployment-using-jenkins/
+
+http://localhost:8080/manager/text/list
+
+<user username="deployer" password="deployer" roles="manager-script" />
+	
+future:
+http://kohsuke.org/2011/12/01/polling-must-die-triggering-jenkins-builds-from-a-git-hook/
