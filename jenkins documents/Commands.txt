@@ -11,3 +11,8 @@ $ tar -cvf file.tar filename
 
 3. Untar a file
 $ tar -xvf filename.tar
+
+4. View an existing tar archive
+$ tar tvf filename.tar
+
+For rest visit : http://www.thegeekstuff.com/2010/11/50-linux-commands/
